@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background: #111;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+#mainContainer{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#virtualPet{
+  width: 1000px;
+  height: 700px;
+}
+
+#happyButton, 
+#sadButton, 
+#angryButton, 
+#neutralButton, 
+#sickButton, 
+#deadButton,
+#feedBanana,
+#feedBone,
+#resetButton:hover{
+  cursor:pointer;
+}
+
+/* ******* Mouth SVG Layers ******* */
+#happy-mouth, #sad-mouth, #angry-mouth{
+  opacity: 0
+}
+
+/* ******* Eyes SVG Layers ******* */
+#left-deadEye, #left-eye-lid, #right-deadEye, #right-eye-lid, #fruit-banana, #yucky-bone{
+  opacity: 0
+}
+
+
+/* ******* SENTENCES/FEELING WERDS SVG Layers ******* */
+#happy, #sad, #angry, #dead, #sick, #happy-sentence, #sad-sentence, #angry-sentence, 
+#sick-sentence, #dead-sentence, #banana-sentence, #bone-sentence, #tears, #thermometer{
+  opacity: 0
+}
+
+@media only screen and (min-width: 400px) {
+  #virtualPet{
+    width: 100%;
+  }
+}
+
+
